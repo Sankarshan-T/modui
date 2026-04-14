@@ -1,5 +1,9 @@
 [
   {
+    "name": "Badge",
+    "href": "/documentation/badge"
+  },
+  {
     "name": "Button",
     "href": "/documentation/button"
   },

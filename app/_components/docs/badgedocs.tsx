@@ -1,6 +1,6 @@
 import { CodeBlock } from "@/components/ui/codeblock"
 
-export const Linkdocs = () => {
+export const BadgeDocs = () => {
     return (
         <div className="w-full py-6">
             <div className="space-y-4">
@@ -18,22 +18,22 @@ export const Linkdocs = () => {
                         </thead>
                         <tbody className="divide-y divide-slate-200">
                             <tr className="hover:bg-slate-50/50 transition-colors">
-                                <td className="px-4 py-3 font-mono text-blue-600 font-medium">href</td>
-                                <td className="px-4 py-3 text-slate-600">"string"</td>
-                                <td className="px-4 py-3 text-slate-400">-</td>
-                                <td className="px-4 py-3 text-slate-600">The url that the link redirects to once clicked.</td>
+                                <td className="px-4 py-3 font-mono text-blue-600 font-medium">variant</td>
+                                <td className="px-4 py-3 text-slate-600"> 'default' | 'success' | 'failure' | 'warning' | 'outline' </td>
+                                <td className="px-4 py-3 text-slate-400">"default"</td>
+                                <td className="px-4 py-3 text-slate-600">The visual style of the badge.</td>
+                            </tr>
+                            <tr className="hover:bg-slate-50/50 transition-colors">
+                                <td className="px-4 py-3 font-mono text-blue-600 font-medium">size</td>
+                                <td className="px-4 py-3 text-slate-600"> 'sm' | 'md' | 'xl' </td>
+                                <td className="px-4 py-3 text-slate-400">"sm"</td>
+                                <td className="px-4 py-3 text-slate-600">The visual size of the badge.</td>
                             </tr>
                             <tr className="hover:bg-slate-50/50 transition-colors">
                                 <td className="px-4 py-3 font-mono text-blue-600 font-medium">className</td>
-                                <td className="px-4 py-3 text-slate-600">"string" </td>
+                                <td className="px-4 py-3 text-slate-600">string</td>
                                 <td className="px-4 py-3 text-slate-400">default classes</td>
-                                <td className="px-4 py-3 text-slate-600">The visual size of the button.</td>
-                            </tr>
-                            <tr className="hover:bg-slate-50/50 transition-colors">
-                                <td className="px-4 py-3 font-mono text-blue-600 font-medium">asChild</td>
-                                <td className="px-4 py-3 text-slate-600">"true | false"</td>
-                                <td className="px-4 py-3 text-slate-400">false</td>
-                                <td className="px-4 py-3 text-slate-600">Disables default classes if true.</td>
+                                <td className="px-4 py-3 text-slate-600">Any tailwind classes to modify the look of the badge</td>
                             </tr>
                         </tbody>
                     </table>
@@ -60,7 +60,7 @@ export const Linkdocs = () => {
                             </p>
                             <div className="ml-9">
                                 <CodeBlock language="terminal" className="w-full">
-                                    {`npx modui-uikit@latest add link`}
+                                    {`npx modui-uikit@latest add badge`}
                                 </CodeBlock>
                             </div>
                         </div>
@@ -77,13 +77,13 @@ export const Linkdocs = () => {
                             </p>
                             <div className="ml-9">
                                 <CodeBlock language="typescript" className="w-full">
-                                    {`import { Link } from '@/components/ui/link'
+                                    {`import { Badge } from '@/components/ui/badge'
 
 export default function Example() {
   return (
-    <Link href="github.com">
-      This link will redirect user to github.com
-    </Link>
+    <Badge variant="warning" size="md">
+      badge of size: medium, variant: warning
+    </Badge>
   )
 }`}
                                 </CodeBlock>
