@@ -6,7 +6,7 @@ const OUTPUT_FILE = path.join(process.cwd(), 'lib/registry-manifest.json');
 
 function generateRegistry() {
     if (!fs.existsSync(UI_DIR)) {
-        console.log("❌ UI directory not found. Skipping registry sync.");
+        console.log("X UI directory not found. Skipping registry sync.");
         return;
     }
 

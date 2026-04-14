@@ -1,49 +1,14 @@
 [
   {
     "name": "Button",
-    "href": "/documentation/button",
-    "props": [
-      {
-        "name": "variant",
-        "type": "\"primary\" | \"secondary\" | \"outline\" | \"ghost\" | \"danger\" | null | undefined",
-        "required": false,
-        "defaultValue": "-",
-        "description": ""
-      },
-      {
-        "name": "size",
-        "type": "\"sm\" | \"md\" | \"lg\" | null | undefined",
-        "required": false,
-        "defaultValue": "-",
-        "description": ""
-      }
-    ]
+    "href": "/documentation/button"
+  },
+  {
+    "name": "Codeblock",
+    "href": "/documentation/codeblock"
   },
   {
     "name": "Link",
-    "href": "/documentation/link",
-    "props": [
-      {
-        "name": "href",
-        "type": "string",
-        "required": true,
-        "defaultValue": "-",
-        "description": ""
-      },
-      {
-        "name": "className",
-        "type": "string | undefined",
-        "required": false,
-        "defaultValue": "-",
-        "description": ""
-      },
-      {
-        "name": "asChild",
-        "type": "boolean | undefined",
-        "required": false,
-        "defaultValue": "-",
-        "description": ""
-      }
-    ]
+    "href": "/documentation/link"
   }
 ]
