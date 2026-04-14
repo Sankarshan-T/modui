@@ -6,9 +6,11 @@ export default function DocumentationLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <body>
+        <div className="flex min-h-[calc(100vh-64px)]">
             <Sidebar />
-            {children}
-        </body>
+            <main className="flex-1">
+                {children}
+            </main>
+        </div>
     );
 }

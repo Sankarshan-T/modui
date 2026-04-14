@@ -12,7 +12,7 @@ export const Sidebar = () => {
     const components = componentsData as ComponentMetadata[];
 
     return (
-        <aside className="w-64 min-h-[calc(100vh-64px)] bg-background border-r border-border flex flex-col">
+        <aside className="w-64 min-h-[calc(100vh-64px)] sticky bg-background border-r border-border flex flex-col">
             <div className="px-6 py-8">
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-4">
                     Library
