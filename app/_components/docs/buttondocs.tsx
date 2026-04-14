@@ -1,3 +1,5 @@
+import { CodeBlock } from "@/components/ui/codeblock"
+
 export const ButtonDocs = () => {
     return (
         <div className="w-full py-6">
@@ -43,9 +45,20 @@ export const ButtonDocs = () => {
                     </table>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-4 flex justify-start flex-col">
                     <h1 className="font-bold text-2xl text-slate-900">Usage</h1>
+                    <div className="w-full flex flex-col items-center justify-center">
+                        <p>First Install the component with the cli tool</p>
+                        <CodeBlock language="typescript" className="w-auto whitespace-pre-wrap">
+                            {
+                                `import { Button } from '@/components/ui/button'
 
+<Button variant="outline" size="sm">
+    Click Me
+</Button>`
+                            }
+                        </CodeBlock>
+                    </div>
                 </div>
             </div>
         </div>

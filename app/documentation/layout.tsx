@@ -6,9 +6,9 @@ export default function DocumentationLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <div className="flex min-h-[calc(100vh-64px)]">
+        <div className="flex h-[calc(100vh-64px)]">
             <Sidebar />
-            <main className="flex-1">
+            <main className="flex-1 overflow-y-auto overflow-x-hidden">
                 {children}
             </main>
         </div>
