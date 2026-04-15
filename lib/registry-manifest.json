@@ -12,6 +12,10 @@
     "href": "/documentation/callout"
   },
   {
+    "name": "Card",
+    "href": "/documentation/card"
+  },
+  {
     "name": "Codeblock",
     "href": "/documentation/codeblock"
   },

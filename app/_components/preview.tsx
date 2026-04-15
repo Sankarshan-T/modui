@@ -3,6 +3,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/callout";
+import { Card } from "@/components/ui/card";
 import { CodeBlock } from "@/components/ui/codeblock";
 import { Input } from "@/components/ui/input";
 import { Link } from "@/components/ui/link";
@@ -73,6 +74,20 @@ export const Preview = ({
             ) : ""}
             {name === "input" ? (
                 <Input icon={Image} />
+            ) : ""}
+            {name === "card" ? (
+                <Card
+                    title="Card 1!"
+                    subtitle="A card description"
+                    footer="footer"
+                    action={
+                        <Button>
+                            Hi!
+                        </Button>
+                    }
+                >
+                    This is a card!
+                </Card>
             ) : ""}
         </>
     )
