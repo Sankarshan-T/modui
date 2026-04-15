@@ -1,5 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Callout } from "@/components/ui/callout";
 import { CodeBlock } from "@/components/ui/codeblock";
 import { Link } from "@/components/ui/link";
 import chalk from "chalk";
@@ -61,6 +62,11 @@ export const Preview = ({
                         Outline | large
                     </Badge>
                 </div>
+            ) : ""}
+            {name === "callout" ? (
+                <Callout title="Title for callout" color="green">
+                    A small info msg in green
+                </Callout>
             ) : ""}
         </>
     )

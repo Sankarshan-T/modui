@@ -1,5 +1,6 @@
 import { BadgeDocs } from "./docs/badgedocs";
 import { ButtonDocs } from "./docs/buttondocs";
+import { CalloutDocs } from "./docs/calloutdocs";
 import { CodeDocs } from "./docs/codedocs";
 import { Linkdocs } from "./docs/linkdocs";
 
@@ -24,6 +25,9 @@ export const DocsContent = ({
             ) : ""}
             {name === "badge" ? (
                 <BadgeDocs />
+            ) : ""}
+            {name === "callout" ? (
+                <CalloutDocs />
             ) : ""}
         </>
     )
