@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full antialiased">
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased overflow-hidden`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased overflow-clip `}>
         <Navbar />
         {children}
       </body>

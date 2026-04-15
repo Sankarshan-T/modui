@@ -140,4 +140,34 @@ export default function Example() {
       { name: "color", type: '"red" | "blue" | "green" | "yellow"', default: "blue", desc: "Color of the effect of the card." },
     ]
   },
+  switch: {
+    title: "Switch",
+    installCmd: "npx modui-uikit@latest add switch",
+    usageCode: `import { Switch } from '@/components/ui/switch'
+
+export default function Example() {
+  return <Switch label="Enable Notifications" defaultChecked={true} />
+}`,
+    props: [
+      { name: "label", type: "string", default: "-", desc: "Text shown next to the switch." },
+      { name: "defaultChecked", type: "boolean", default: "false", desc: "The initial state." },
+    ]
+  },
+  accordion: {
+    title: "Accordion",
+    installCmd: "npx modui-uikit@latest add accordion",
+    usageCode: `import { Accordion } from '@/components/ui/accordion'
+
+export default function Example() {
+  return (
+    <Accordion title="Title for accordion?">
+      Yeah the content you can write inside here
+    </Accordion>
+  )
+}`,
+    props: [
+      { name: "title", type: "string", default: "-", desc: "The visible header of the item." },
+      { name: "children", type: "ReactNode", default: "-", desc: "The content hidden inside." },
+    ]
+  },
 };

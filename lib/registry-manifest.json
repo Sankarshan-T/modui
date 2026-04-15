@@ -1,5 +1,9 @@
 [
   {
+    "name": "Accordion",
+    "href": "/documentation/accordion"
+  },
+  {
     "name": "Badge",
     "href": "/documentation/badge"
   },
@@ -26,5 +30,9 @@
   {
     "name": "Link",
     "href": "/documentation/link"
+  },
+  {
+    "name": "Switch",
+    "href": "/documentation/switch"
   }
 ]

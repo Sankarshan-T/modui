@@ -1,5 +1,6 @@
 "use client";
 
+import { Accordion } from "@/components/ui/accordion";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Callout } from "@/components/ui/callout";
@@ -7,6 +8,7 @@ import { Card } from "@/components/ui/card";
 import { CodeBlock } from "@/components/ui/codeblock";
 import { Input } from "@/components/ui/input";
 import { Link } from "@/components/ui/link";
+import { Switch } from "@/components/ui/switch";
 import { Image } from "lucide-react";
 
 interface PreviewProps {
@@ -88,6 +90,14 @@ export const Preview = ({
                 >
                     This is a card!
                 </Card>
+            ) : ""}
+            {name === "switch" ? (
+                <Switch label="A switch label!" />
+            ) : ""}
+            {name === "accordion" ? (
+                <Accordion title="The title for the accordion">
+                    Hello! Content inside accordion
+                </Accordion>
             ) : ""}
         </>
     )

@@ -4,7 +4,7 @@ import { Link } from "@/components/ui/link";
 export default function Home() {
   return (
     <div className="min-h-screen font-sans">
-      <main className="max-w-4xl mx-auto px-6 py-24 text-center">
+      <main className="max-w-4xl mx-auto px-6 pt-24 pb-0 text-center">
         <span className="inline-block px-3 py-1 rounded-full bg-muted text-muted-foreground text-xs font-semibold border-2 mb-6">
           modUi v1.0.0
         </span>
@@ -41,7 +41,7 @@ export default function Home() {
           </p>
         </div>
       </main>
-      <footer className="w-full py-1.5 mt-9 flex items-center justify-center bg-muted">
+      <footer className="absolute bottom-0 left-0 mb-0 py-2.5 w-full flex items-center justify-center bg-slate-100">
         © 2026 modUi made with 💖, coolcream
       </footer>
     </div>
