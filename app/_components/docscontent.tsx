@@ -2,6 +2,7 @@ import { BadgeDocs } from "./docs/badgedocs";
 import { ButtonDocs } from "./docs/buttondocs";
 import { CalloutDocs } from "./docs/calloutdocs";
 import { CodeDocs } from "./docs/codedocs";
+import { InputDocs } from "./docs/inputdocs";
 import { Linkdocs } from "./docs/linkdocs";
 
 interface DocsContentProps {
@@ -28,6 +29,9 @@ export const DocsContent = ({
             ) : ""}
             {name === "callout" ? (
                 <CalloutDocs />
+            ) : ""}
+            {name === "input" ? (
+                <InputDocs />
             ) : ""}
         </>
     )
