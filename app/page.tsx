@@ -18,12 +18,12 @@ export default function Home() {
 
         <div className="flex justify-center gap-4">
           <Button variant={"primary"} className=" px-6 py-3">
-            <Link href="/components" asChild>
+            <Link href="/components" asChild className="h-full">
               Get Started
             </Link>
           </Button>
           <Button variant={"outline"} className="text-muted-foreground">
-            <Link href="https://github.com/Sankarshan-T/herowebkit">
+            <Link href="https://github.com/Sankarshan-T/herowebkit" className="h-full">
               View Github
             </Link>
           </Button>

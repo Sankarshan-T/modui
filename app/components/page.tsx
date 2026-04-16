@@ -25,13 +25,13 @@ export default function componenents() {
                         </div>
                         Available Components
                     </div>
-                    <div className="w-full h-px bg-muted border-2" />
+                    <div className="w-full h-px bg-muted border" />
                     <div className="flex items-center justify-center flex-wrap mt-4 gap-5">
                         {components.map((component: any) => (
                             <Link
                                 key={component.name}
                                 href={component.href}
-                                className="flex items-center"
+                                className="flex items-center h-full"
                             >
                                 <Button variant={"outline"} className="w-full flex items-center justify-between">
                                     {component.name}

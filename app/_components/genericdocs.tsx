@@ -45,6 +45,17 @@ export const GenericDocs = ({ data }: { data: any }) => {
                 <div className="space-y-3">
                     <div className="flex items-center gap-3">
                         <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-[12px] font-medium text-white">1</span>
+                        <h3 className="font-medium text-slate-900">Create next app (skip if you already have setup a next app)</h3>
+                    </div>
+                    <div className="ml-9">
+                        <CodeBlock language="terminal">
+                            {`npx create-next-app@latest --yes`}
+                        </CodeBlock>
+                    </div>
+                </div>
+                <div className="space-y-3">
+                    <div className="flex items-center gap-3">
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-[12px] font-medium text-white">2</span>
                         <h3 className="font-medium text-slate-900">Install</h3>
                     </div>
                     <div className="ml-9">
@@ -54,7 +65,7 @@ export const GenericDocs = ({ data }: { data: any }) => {
 
                 <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-[12px] font-medium text-white">2</span>
+                        <span className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-900 text-[12px] font-medium text-white">3</span>
                         <h3 className="font-medium text-slate-900">Implement</h3>
                     </div>
                     <div className="ml-9">
